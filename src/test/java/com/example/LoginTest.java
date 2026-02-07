@@ -8,6 +8,8 @@ public class LoginTest {
 	
 	@Test
 	public void validLogin() {
+		String env = System.getProperty("env", "staging");
+		System.out.println("Running tests on environment: " + env);
 		Assert.assertTrue(true);
 	}
 	
